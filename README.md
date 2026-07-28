@@ -51,14 +51,22 @@ OMP_NUM_THREADS=1 python3 model_rigor.py
 ## Honest evaluation
 
 The standard temporal hold-out AUC (~0.95) is optimistic. Under
-leave-one-province-out evaluation it falls to **0.75**, and a persistence baseline
-already reaches **0.88**. We report both the optimistic in-distribution and the
-conservative cross-region figures; see `model_rigor.py`.
+leave-one-province-out (LOPO) evaluation it falls to **0.72-0.75**, and a
+persistence baseline already reaches **0.88**. We report both the optimistic
+in-distribution and the conservative cross-region figures; see `model_rigor.py`.
+
+## Can the spatial gap be closed?
+
+`build_spatial.py` and `build_spatial2.py` re-run LOPO under seven remediation
+strategies (fold-safe transferable features, CORAL alignment, importance
+weighting, KNN exposure priors, semi-supervised transductive geometry,
+ensembling, target-region spatial smoothing). **None beats the naive baseline
+(0.72).** Raw outputs are in `results/`.
 
 ## Citation
 
-Y. Kim and E. J. Sun, "Machine Learning Prediction of Road-Accident Hotspot Risk
-in Korea." (under review)
+Y. Kim, "Spatial Generalization of Machine-Learned Road-Accident Hotspot Risk:
+An Honest Benchmark and the Limits of Domain Adaptation." (under review)
 
 ## License
 

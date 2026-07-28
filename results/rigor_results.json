@@ -1,0 +1,48 @@
+{
+  "thr": 29.0,
+  "A_LOPO": {
+    "mean_region_AUC": 0.731,
+    "std": 0.101,
+    "pooled_AUC": 0.753,
+    "n_regions": 14
+  },
+  "B_novel": {
+    "full_test_AUC": 0.955,
+    "novel_AUC": [
+      0.94,
+      150,
+      15
+    ],
+    "seen_AUC": [
+      0.956,
+      508,
+      132
+    ],
+    "novel_frac": 0.228
+  },
+  "C_persistence": {
+    "AUC": 0.881,
+    "matched_frac": 0.772
+  },
+  "D_density": {
+    "XGB_full": 0.955,
+    "XGB_no_density": 0.953,
+    "Logit_full": 0.863,
+    "Logit_no_density": 0.858
+  },
+  "E_bootstrap": {
+    "XGB_AUC_CI": [
+      0.938,
+      0.97
+    ],
+    "RF_AUC_CI": [
+      0.944,
+      0.972
+    ],
+    "RF_minus_XGB_CI": [
+      -0.004,
+      0.012
+    ],
+    "diff_includes_0": true
+  }
+}

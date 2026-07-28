@@ -1,0 +1,29 @@
+{
+  "thr": 29.0,
+  "n": 3956,
+  "n_sido": 17,
+  "V0_baseline": {
+    "LOPO_mean_AUC": 0.721,
+    "std": 0.106,
+    "n_regions": 14
+  },
+  "V1_transferable": {
+    "LOPO_mean_AUC": 0.53,
+    "std": 0.163,
+    "n_regions": 14
+  },
+  "V2_CORAL": {
+    "LOPO_mean_AUC": 0.563,
+    "std": 0.1,
+    "n_regions": 14
+  },
+  "V3_impweight": {
+    "LOPO_mean_AUC": 0.536,
+    "std": 0.168,
+    "n_regions": 14
+  },
+  "RANDOM_5fold_ref": {
+    "AUC": 0.963,
+    "std": 0.004
+  }
+}
