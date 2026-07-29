@@ -1,0 +1,122 @@
+{
+  "rolling": {
+    "2020": {
+      "n_test": 665,
+      "Logit": 0.873,
+      "XGB": 0.958
+    },
+    "2021": {
+      "n_test": 656,
+      "Logit": 0.831,
+      "XGB": 0.936
+    },
+    "2022": {
+      "n_test": 658,
+      "Logit": 0.863,
+      "XGB": 0.955
+    }
+  },
+  "topk": {
+    "10": 0.9,
+    "20": 0.95,
+    "50": 0.9,
+    "100": 0.88,
+    "150": 0.793
+  },
+  "descriptive": {
+    "per_year": {
+      "2017": {
+        "sites": 660,
+        "accidents": 12931,
+        "deaths": 122,
+        "serious": 4116,
+        "casualties": 19102
+      },
+      "2018": {
+        "sites": 655,
+        "accidents": 13294,
+        "deaths": 93,
+        "serious": 4090,
+        "casualties": 19803
+      },
+      "2019": {
+        "sites": 662,
+        "accidents": 13947,
+        "deaths": 109,
+        "serious": 3849,
+        "casualties": 20581
+      },
+      "2020": {
+        "sites": 665,
+        "accidents": 13114,
+        "deaths": 95,
+        "serious": 3244,
+        "casualties": 19317
+      },
+      "2021": {
+        "sites": 656,
+        "accidents": 12341,
+        "deaths": 105,
+        "serious": 3000,
+        "casualties": 18112
+      },
+      "2022": {
+        "sites": 658,
+        "accidents": 12078,
+        "deaths": 76,
+        "serious": 2758,
+        "casualties": 17141
+      }
+    }
+  },
+  "severity_models": {
+    "Logistic": {
+      "AUC": 0.717,
+      "F1": 0.408
+    },
+    "kNN": {
+      "AUC": 0.71,
+      "F1": 0.463
+    },
+    "MLP": {
+      "AUC": 0.694,
+      "F1": 0.472
+    },
+    "RandomForest": {
+      "AUC": 0.719,
+      "F1": 0.462
+    },
+    "XGBoost": {
+      "AUC": 0.752,
+      "F1": 0.485
+    }
+  },
+  "threshold_sensitivity": {
+    "p50": {
+      "pos_rate": 0.5,
+      "Logit": 0.88,
+      "XGB": 0.973
+    },
+    "p75": {
+      "pos_rate": 0.223,
+      "Logit": 0.863,
+      "XGB": 0.955
+    },
+    "p90": {
+      "pos_rate": 0.071,
+      "Logit": 0.829,
+      "XGB": 0.943
+    }
+  },
+  "hyperparam": {
+    "d3_n100": 0.929,
+    "d3_n300": 0.946,
+    "d3_n500": 0.952,
+    "d4_n100": 0.948,
+    "d4_n300": 0.955,
+    "d4_n500": 0.957,
+    "d6_n100": 0.962,
+    "d6_n300": 0.959,
+    "d6_n500": 0.954
+  }
+}

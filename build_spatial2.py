@@ -6,7 +6,8 @@ from scipy.spatial import cKDTree
 from sklearn.neighbors import NearestNeighbors
 from sklearn.metrics import roc_auc_score
 from xgboost import XGBClassifier
-import os; os.chdir("/Users/yongjun_kim/Documents/project_kaccident")
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 df=pd.read_csv('data/kaccident_hotspots_road.csv').dropna(subset=['lat','lon','occrrnc_cnt']).reset_index(drop=True)
 df['sido_cd']=df['sido_cd'].astype(int); coords=df[['lat','lon']].values
 ROAD=['road_rank','n_roads','lanes','maxspeed_v']

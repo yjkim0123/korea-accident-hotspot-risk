@@ -1,0 +1,112 @@
+{
+  "threshold": 29.0,
+  "ablation": {
+    "spatial": {
+      "Logit_cv": 0.85,
+      "Logit_sd": 0.011,
+      "XGB_cv": 0.954,
+      "XGB_sd": 0.003,
+      "Logit_test": 0.846,
+      "XGB_test": 0.952
+    },
+    "road": {
+      "Logit_cv": 0.772,
+      "Logit_sd": 0.015,
+      "XGB_cv": 0.809,
+      "XGB_sd": 0.017,
+      "Logit_test": 0.761,
+      "XGB_test": 0.789
+    },
+    "full": {
+      "Logit_cv": 0.868,
+      "Logit_sd": 0.011,
+      "XGB_cv": 0.953,
+      "XGB_sd": 0.002,
+      "Logit_test": 0.863,
+      "XGB_test": 0.955
+    }
+  },
+  "baselines_full": {
+    "Logistic": {
+      "AUC": 0.863,
+      "F1": 0.567,
+      "Acc": 0.828
+    },
+    "kNN": {
+      "AUC": 0.894,
+      "F1": 0.637,
+      "Acc": 0.85
+    },
+    "MLP": {
+      "AUC": 0.915,
+      "F1": 0.608,
+      "Acc": 0.851
+    },
+    "RandomForest": {
+      "AUC": 0.959,
+      "F1": 0.769,
+      "Acc": 0.891
+    },
+    "XGBoost": {
+      "AUC": 0.955,
+      "F1": 0.793,
+      "Acc": 0.907
+    }
+  },
+  "per_province": {
+    "Seoul": {
+      "n": 75,
+      "AUC": 0.82,
+      "pos": 56
+    },
+    "Busan": {
+      "n": 48,
+      "AUC": 0.769,
+      "pos": 11
+    },
+    "Daegu": {
+      "n": 24,
+      "AUC": 0.762,
+      "pos": 11
+    },
+    "Incheon": {
+      "n": 28,
+      "AUC": 0.907,
+      "pos": 3
+    },
+    "Gyeonggi": {
+      "n": 93,
+      "AUC": 0.92,
+      "pos": 31
+    },
+    "Gangwon": {
+      "n": 50,
+      "AUC": 1.0,
+      "pos": 1
+    },
+    "Chungbuk": {
+      "n": 33,
+      "AUC": 0.989,
+      "pos": 3
+    },
+    "Chungnam": {
+      "n": 43,
+      "AUC": 1.0,
+      "pos": 3
+    },
+    "Jeonnam": {
+      "n": 64,
+      "AUC": 0.987,
+      "pos": 4
+    }
+  },
+  "roadclass_rates": {
+    "residential": 0.077,
+    "tertiary": 0.145,
+    "secondary": 0.198,
+    "primary": 0.332,
+    "trunk": 0.295,
+    "motorway": 0.149
+  },
+  "shap": "ok"
+}

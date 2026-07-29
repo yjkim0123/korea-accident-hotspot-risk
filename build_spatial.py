@@ -18,7 +18,9 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
 from xgboost import XGBClassifier
-HERE="/Users/yongjun_kim/Documents/project_kaccident"; import os; os.chdir(HERE)
+import os
+# run from the repository root (where data/ lives)
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 df=pd.read_csv('data/kaccident_hotspots_road.csv').dropna(subset=['lat','lon','occrrnc_cnt']).reset_index(drop=True)
 df['sido_cd']=df['sido_cd'].astype(int)

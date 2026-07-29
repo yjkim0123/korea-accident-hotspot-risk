@@ -1,0 +1,21 @@
+{
+  "count_high": {
+    "Logit_AUC": "0.850±0.011",
+    "XGB_AUC": "0.954±0.003",
+    "pos_rate": 0.251
+  },
+  "severity": {
+    "Logit_AUC": "0.730±0.011",
+    "XGB_AUC": "0.789±0.004",
+    "pos_rate": 0.402
+  },
+  "shap_importance": {
+    "density_5km": 1.0515,
+    "sido_cd": 0.9087,
+    "lon": 0.6645,
+    "lat": 0.5005,
+    "knn_dist_mean": 0.3654,
+    "knn_dist_min": 0.1754,
+    "year": 0.1476
+  }
+}

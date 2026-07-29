@@ -1,0 +1,13 @@
+{
+  "shap_dep": "ok",
+  "fair_metropolitan": {
+    "n": 223,
+    "pos": 103,
+    "AUC": 0.881
+  },
+  "fair_provincial": {
+    "n": 435,
+    "pos": 44,
+    "AUC": 0.978
+  }
+}

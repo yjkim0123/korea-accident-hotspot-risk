@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "Logit": {
+      "AUC": 0.846,
+      "F1": 0.522
+    },
+    "XGBoost": {
+      "AUC": 0.952,
+      "F1": 0.777
+    },
+    "Logit_cv": {
+      "AUC": 0.85,
+      "std": 0.011
+    },
+    "XGB_cv": {
+      "AUC": 0.954,
+      "std": 0.003
+    },
+    "GraphSAGE": {
+      "AUC": 0.93
+    }
+  },
+  "with_road": {
+    "Logit": {
+      "AUC": 0.863,
+      "F1": 0.567
+    },
+    "XGBoost": {
+      "AUC": 0.955,
+      "F1": 0.793
+    },
+    "Logit_cv": {
+      "AUC": 0.868,
+      "std": 0.011
+    },
+    "XGB_cv": {
+      "AUC": 0.953,
+      "std": 0.002
+    },
+    "GraphSAGE": {
+      "AUC": 0.947
+    }
+  }
+}
